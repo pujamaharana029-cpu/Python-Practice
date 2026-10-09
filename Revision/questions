@@ -1,0 +1,70 @@
+#wap that will determine weather when the value of temperature and humidity is provided by the user
+"""t=float(input("enter temperature in c: "))
+h=float(input("enter humidity : "))
+if(t>=30 and h>=90):
+    print("Hot and Humid")
+elif(t>=30 and t<90):
+    print("Hot")
+elif(t<30 and t>=90):
+    print("Cool and Humid")
+else:
+    print("cool")
+"""
+#wap that will take three digits from the user and add the square of each digit 
+"""num=int(input("enter three digit number: "))
+sum=(num%10)**2+((num//10)%10)**2+(num//100)**2
+print("the sum of square of each digit : ",sum)
+"""
+#write a program that will check whether the number is armstrong or not
+"""num=int(input("enter a number: "))
+original_num=num
+#count digits
+count=0
+temp=num
+while temp>0:
+    count+=1
+    temp//=10
+#calculate sum
+temp=num
+total=0
+while(temp>0):
+    digit=temp%10
+    total=total+digit**count
+    temp//=10
+if(total==original_num):
+    print("It's an Armstrong number")
+else:
+    print("It's not an Armstrong number")
+
+"""
+#Write a menu driven program - 1.cm to ft 2.kl to miles 3.usd to inr 4.exit
+while True:
+    print("1. centimetres to feet conversion")
+    print("2. Kilometres to miles conversion")
+    print("3.USD to INR conversion")
+    print("4.exit")
+
+    choice=int(input("enter your choice: "))
+
+    if(choice==1):
+        cm=float(input("enter cm : "))
+        ft=cm/30.48
+        print("conversion of cm to ft:", ft)
+    elif(choice==2):
+        km=int(input("enter km: "))
+        miles=km*0.6213
+        print("conversion of km to miles: ",miles)
+    elif(choice==3):
+        USD=int(input("enter USD :"))
+        exchange_rate=int(input("enter rate: "))
+        INR=USD*exchange_rate
+        print("conversion of USD to INR: ",INR)
+    elif(choice==4):
+        print("exit")
+        break
+
+
+        
+
+
+

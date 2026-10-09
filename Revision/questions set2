@@ -1,0 +1,36 @@
+#rite a program that will check whether the number is narcisstic number or not
+"""num=int(input("Enter a number:"))
+original=num
+count=0
+temp=num
+while(temp>0):
+    count+=1
+    temp//=10
+
+temp=num
+sum=0
+while(temp>0):
+    digit=temp%10
+    sum+=digit**count
+    temp//=10
+
+if(original==sum):
+    print("It's  a narcissistic number")
+else:
+    print("not")
+"""
+#Write a program that will give you the in hand salary after deduction of HRA (10%),DA (5%),PF(3%), and tax(if salary is between 5-10 lakh-10%), (11-20lakh-20%), (20-30%) (0-1lakh print k)
+salary=int(input("enter your salary: "))
+HRA=salary*0.1
+DA=salary*0.05
+PF=salary*0.03
+if(salary>=500000 and salary<=1000000):
+    tax=salary*0.1
+elif(salary>1000000 and salary<=2000000):
+    tax=salary*0.2
+elif(salary>2000000):
+    tax=salary*0.3
+else:
+    print("k")
+Inhand_salary=salary-HRA-DA-PF-tax
+print("your in hand salary is: ",Inhand_salary)
