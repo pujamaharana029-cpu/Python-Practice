@@ -1,0 +1,20 @@
+#print all armstrong numbers in the range of 100 to 1000
+for num in range(100,1000):
+    original_num=num
+    #count digits
+    count=0
+    temp=num
+    while temp>0:
+        count+=1
+        temp//=10
+    #calculate sum
+    temp=num
+    total=0
+    while(temp>0):
+        digit=temp%10
+        total=total+digit**count
+        temp//=10
+
+    if(original_num==num):
+        print(original_num)
+        
