@@ -1,5 +1,5 @@
 #print all armstrong numbers in the range of 100 to 1000
-for num in range(100,1000):
+"""for num in range(100,1000):
     original_num=num
     #count digits
     count=0
@@ -16,5 +16,25 @@ for num in range(100,1000):
         temp//=10
 
     if(original_num==num):
-        print(original_num)
+        print(original_num)"""
+
+#print first 25 prime numbers
+"""count = 0
+num=2
+while count<25:   
+    for i in range(2,num):
+        if(num%i==0):
+            break
+    else:
+        print(num)
+        count+=1
+    num+=1"""
+
+#count the number of digits in a number
+num=int(input("Enter a number: "))
+count=0
+while num>0:
+    num//=10
+    count+=1    
+print("Number of digits:",count)
         
