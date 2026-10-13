@@ -1,8 +1,25 @@
 #print all the first 20 numbers of a fibonacci series
-a=0
+"""a=0
 b=1
 for i in range(20):
     print(a,end=" ")
     c=a+b
     a=b
-    b=c
+    b=c"""
+
+#user will provide 3 numbers you have to find the lcmof those 2 numbers
+"""num1=int(input("Enter first number: "))
+num2=int(input("Enter second number: "))
+lcm=1
+for i in range(1,num1*num2+1):
+    if i%num1==0 and i%num2==0:
+        lcm=i
+        break
+print("LCM of", num1, "and", num2, "is:", lcm)"""
+
+#wap that accepts an integer (n) and computes the value of n+nn+nnn
+n=int(input("Enter an integer: "))
+nn=n*11
+nnn=n*111
+result=n+nn+nnn
+print("The result of n + nn + nnn is:", result)
