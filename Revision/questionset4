@@ -31,10 +31,61 @@ while count<25:
     num+=1"""
 
 #count the number of digits in a number
-num=int(input("Enter a number: "))
+"""num=int(input("Enter a number: "))
 count=0
 while num>0:
     num//=10
     count+=1    
-print("Number of digits:",count)
-        
+print("Number of digits:",count)"""
+
+
+#find the second largest unique number in a list
+"""numbers = [12, 45, 7, 45, 32, 12, 28]
+
+largest = float('-inf')
+second_largest = float('-inf')
+
+for num in numbers:
+    if num > largest:
+        second_largest = largest
+        largest = num
+
+    elif num > second_largest and num != largest:
+        second_largest = num
+
+if second_largest == float('-inf'):
+    print("No second-largest distinct number")
+else:
+    print("Second largest number:", second_largest)
+
+
+"""
+
+#count the frequency of each element
+numbers = [2, 3, 2, 5, 3, 2, 8, 5]
+
+frequency = {}
+
+for num in numbers:
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+print(frequency)
+
+
+#find the duplicate elements in a list
+numbers = [4, 7, 2, 7, 4, 9, 2, 5]
+
+seen = set()
+duplicates = []
+
+for num in numbers:
+    if num in seen:
+        if num not in duplicates:
+            duplicates.append(num)
+    else:
+        seen.add(num)
+
+print("Duplicate elements:", duplicates)
