@@ -1,0 +1,12 @@
+Use case of Pandas
+1. data cleaning
+2. data Analysis
+3.data transformation
+4.data visualization(basic level)
+5.data aggregation
+6.file handling
+7.data filtering and selection
+8.Time series Analysis
+
+Pandas series: A Series is a one-dimentional labeled array capable of holding any data type. The axis labels are collectively called the index.
+comination of series forms a DataFrame.
